@@ -28,13 +28,14 @@
     <script>
         jQuery(document).ready(function () {
             //FOR PDFs 
-            var source_pdf = "Innovation Portfolio (TC).pdf";
+            var source_pdf = "pdf_content.pdf";
             var option_pdf = {
                 webgl:true,
                 autoPlay: true,
                 autoPlayDuration: 10000,
                 autoPlayStart: true,
                 height:'100vh',
+                pageMode: DFLIP.PAGE_MODE.SINGLE
             };
 
             var flipBook_pdf = $("#flipbookPDFContainer").flipBook(source_pdf,option_pdf);
